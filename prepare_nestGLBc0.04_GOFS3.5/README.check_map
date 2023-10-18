@@ -1,0 +1,14 @@
+Check land mask in converted GLBc->ARc0.04 archive fields:
+
+hycom_sea_ok ../regional.depth.a 737_archm.2019_091_12.a 4500 3298
+
+e.g.:
+/p/work1/ddukhovs/hycom/ARCc0.04/archm_arc04T17L41/tmp_gofs35/
+ gordon04-ddukhovs [1017] : hycom_sea_ok ../../topo/depth_ARCc0.04_GOFS3.5_17.a archv_arcT17L41.2017_002_00_stp1.a 3200 5040
+
+
+
+Note:
+The 11th record is a velocity and it will fail this test.
+
+

@@ -1,0 +1,25 @@
+Create HYCOM nest fields from existing nest fields
+prepared for ARCc0.08
+Interpolate existing 0.08 nest fields -> ARCc0.04 grid and topography T17DD (corrected 
+strait in CAA)
+
+nest files are processed by years, 1 year at a time
+months within the year can be selected
+edit nest_qsub.com - year and month(s) to process
+csh nest_qsub.com
+
+should copy nest files, untar/zip them in scratch directory
+call function to interpolate arc0.08 -> arc0.04
+
+1 step: existing nest files for ARCc0.08 are interpolated into ARCc0.04
+using isubregion
+
+In the created nest files for ARCc0.04, there are -999.0 along the northern (pacific) OB
+for U and V fields, also there are several points along the eastern OB
+These are most probably arise duing interpolation at the OB for U and V grid 
+
+To fix these, 2 step: run fix_isubregion_arc04/fillnans.x to fix -999.0 in the created ARCc0.04 
+
+
+
+

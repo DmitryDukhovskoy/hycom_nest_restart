@@ -1,0 +1,28 @@
+Prepare restart for ARCc0.04 from
+GLBc0.04 GOFS3.5 expt 216
+
+1) GLBc0.04 T27 archm ---> ARCc0.04 T17DD archv
+
+  -  GLBc archm T27 --> ARC archv T27
+     use daily mean archive output to create
+     archv on ARCc grid - U,V total should be
+                          written as U=u_btrop+u'
+                   in archv files
+      remapGLB.x
+
+
+ Alternatively, use archv GLBc T27 -----> ARCc0.04
+     need to modify sub_restart.csh 
+     to call correct script 
+
+  -  ARC archv 27 ---> ARC archv T17DD
+     isubreg.csh
+
+For this, use preapre_nest scripts
+
+
+2) ARCc0.04 T17DD archv ----> restart ARCc0.04 
+
+
+
+

@@ -1,0 +1,8 @@
+pthfin   = /p/work1/ddukhovs/hycom/ARCc0.04/nest_arc04/
+pthfout  = /p/work1/ddukhovs/hycom/ARCc0.04/nest_arc04/
+fnstin   = archv_arc04T17L41.2007_001err
+fnstout  = archv_arc04T17L41.2007_001_00  
+pthTOPO  = /p/work1/ddukhovs/hycom/ARCc0.04/topo/
+fnmTOPO  = depth_ARCc0.04_17DD
+IDM      = 3200
+JDM      = 5040

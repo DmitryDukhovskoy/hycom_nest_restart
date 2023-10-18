@@ -1,0 +1,17 @@
+Create restart file for ARCc0.04 from existing restart ARCc0.08
+Steps:
+1) Copy ARCc0.08 from newton, convert to archv
+2) Interpolate archv_arc08 -> archv_arc04
+3) Fix OB -999 values
+4) Convert corrected archv_arc04 -> restart_arc04
+Created restart file does not have tracers, need
+to add tracers
+pwd:
+/home/ddmitry/codes/anls_mtlb_utils/hycom_NOPP_rivers/prepare_restart_arc04
+
+Use fort code on COAPS machines:
+Tracers need to be added afterwards
+
+The following steps are done in tracers2restart.F90:
+4) Interpolate tracers into 0.04 (interp.F90)
+5) Add to restart 0.04 
